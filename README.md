@@ -1,1 +1,1 @@
-# jeu_du_pendule
+# jeu_du_pendu
