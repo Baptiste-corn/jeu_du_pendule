@@ -7,12 +7,13 @@ from random import choice
 def ouverture_fichier():
     # l'utilisateur choisit le fichier qu'il veut, personnalisé ou par défaut
     choix_du_fichier = int(input(
-        "Voulez-vous une banque de mot personnalisé ou par défaut ? \n1 : Personnalisée\n2 : Par défaut\n"))
+        "Voulez-vous une banque de mot personnalisé ou par défaut ? \n1 : Personnalisée\n2 : Par défaut\n"
+        "Attention au chemin du fichier ! \n"))
     if choix_du_fichier == 1:
-        fichier_utilisateur = input("veuillez chosir un fichier (seconde_liste.txt)")
+        fichier_utilisateur = input("veuillez saisir un nom de fichier texte, attention au chemin du fichier")
         fichier = open(fichier_utilisateur, "r", encoding="utf-8")
     elif choix_du_fichier == 2:
-        fichier_utilisateur = "mots_pendu.txt"
+        fichier_utilisateur = input("choisissez le fichier texte par défaut mots_pendu.txt\n")
         fichier = open(fichier_utilisateur, "r", encoding="utf-8")
     else:
         print("ouverture par défaut")
